@@ -23,10 +23,6 @@ PRODUCT_PACKAGES += \
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/banks/overlays
 
-# World apn list from CM
-PRODUCT_COPY_FILES += \
-    vendor/banks/proprietary/system/etc/apns-conf.xml:system/etc/apns-conf.xml
-
 # Proprietary latinime lib for swyping
 PRODUCT_COPY_FILES += \
     vendor/banks/proprietary/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
