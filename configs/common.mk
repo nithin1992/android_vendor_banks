@@ -17,7 +17,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Goo.im ota properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.rom=rastakat \
-    ro.goo.board=$(TARGET_PRODUCT) \
     ro.goo.developerid=BaNkS \
     ro.goo.version=$(shell date +%Y%m%d)
 
