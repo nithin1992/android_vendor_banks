@@ -14,6 +14,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
+# Goo.im ota properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.rom=rastakat \
+    ro.goo.board=$(TARGET_PRODUCT) \
+    ro.goo.developerid=BaNkS \
+    ro.goo.version=$(shell date +%Y%m%d)
+
 # Needed packages
 PRODUCT_PACKAGES += \
     Launcher3 \
