@@ -32,15 +32,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Bootanimation
-ifneq ($(filter banks_hammerhead,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    vendor/banks/proprietary/system/media/hammerhead-bootanimation.zip:system/media/bootanimation.zip
-endif
-
-ifneq ($(filter banks_mako,$(TARGET_PRODUCT)),)
-PRODUCT_COPY_FILES += \
-    vendor/banks/proprietary/system/media/mako-bootanimation.zip:system/media/bootanimation.zip
-endif
+    vendor/banks/proprietary/system/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Inherit kitkat audio package.
 $(call inherit-product, vendor/banks/configs/kitkataudio.mk)
