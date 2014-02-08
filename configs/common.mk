@@ -35,5 +35,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/banks/proprietary/system/media/bootanimation.zip:system/media/bootanimation.zip
 
+# Backup support for gapps and hosts file
+PRODUCT_COPY_FILES += \
+    vendor/banks/proprietary/system/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/banks/proprietary/system/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/banks/proprietary/system/bin/50-rastabackup.sh:system/addon.d/50-rastabackup.sh
+
 # Inherit kitkat audio package.
 $(call inherit-product, vendor/banks/configs/kitkataudio.mk)
